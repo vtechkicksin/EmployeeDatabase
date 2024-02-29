@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Parcel1 Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>Employee Database management</h1>
+        <button class="createEmployee">Add Employee</button>
+      </header>
+
+      <div class="Employees">
+        <div class="Employees__name">
+          <span class="Employee__name--title">Employee List</span>
+          <div class="Employee__name--list"></div>
+        </div>
+
+        <div class="Employees__single">
+          <span class="Employee__single--title">Employee Details</span>
+          <div class="Employee__single--info"></div>
+        </div>
+      </div>
+      <div class="addEmployee">
+        <form class="addEmployee_create">
+          Add new Employee
+          <div>
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="text"
+              name="ImageUrl"
+              placeholder="ImageUrl (optional)"
+              required
+            />
+            <input type="text" name="email" placeholder="Email" required />
+            <input
+              type="number"
+              name="ContactNumber"
+              placeholder="Contact"
+              required
+            />
+            <input type="number" name="salary" placeholder="salary" required />
+            <input
+              type="date"
+              name="dob"
+              placeholder="Date of Birth"
+              class="addEmployee_create--dob"
+              required
+            />
+            <input
+              type="submit"
+              class="addEmployee_create--submit"
+              value="submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/index.js"></script>
+  </body>
+</html>
